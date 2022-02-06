@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TransferenciasService } from './services/transferencias.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bytebank';
+
+  transferencias: any[] = [];
+
+  constructor(private service: TransferenciasService){
+
+  }
 }
